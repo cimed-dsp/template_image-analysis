@@ -11,7 +11,7 @@
 
 ## Overview
 
-The objective of this image analysis tutorial is not coding particular learning models, but rather understanding the data analysis pipeline and interpreting the quality of a blackbox model.
+Medical image processing is a rapidly evolving field that has an important impact on clinical research and practice ([2019 review](https://www.sciencedirect.com/science/article/pii/S093938891830120X)). The investigative tasks involved are varied, including detection and registration of cellular entities, image segmentation and classification, and computer-aided diagnosis and outcome prediction. For this project, we have selected a tutorial that mimics a recent [feasibility study](https://www.sciencedirect.com/science/article/pii/S2589750019301086) which applies the Google Cloud AutoML ML Vision tool to train a deep neural network on over 100,000 NIH Chest X-Ray (CXR) images to learn how to predict from among 14 different pathologies. The main purpose of this tutorial is to gain insight into how to evaluate and interpret the quality of blackbox deep learning models. The CXR dataset, Google AutoML tools, and ideas presented in the tutorial may be useful in guiding potential data science projects. While reading the related papers and working through this analysis, you may want to consider the the critical questions for data analysis related to the DSP Course [Competencies](https://cimed-dsp.github.io/competency.html).
 
 ## Resources
 
@@ -30,17 +30,8 @@ This tutorial will only focus on one of the datasets of the paper, the NIH Chest
 
 ## Step-by-Step Instructions
 
-1. **TODO:** Sign up for Google Cloud Platform
-The Google Cloud Platform offers a free trial to new users who sign up for the service. This free trial included a $300 credit that is good for up to 12 months. We begin by creating a Google Cloud Platform account:
-
-    - Go to Google Cloud main page: [https://cloud.google.com/](https://cloud.google.com/)
-    - Click 'Get started for free' button
-    - Enter your personal Google/Gmail email account address
-    - Enter your country and agree to terms of service
-    - Create an 'Individual' account type and fill out address and **payment details** and submit
-    - Check for confirmation email from 'Google Cloud Platform'. Click the 'Complete your profile' button and fill out the survey to activate your free trial
-    - When you first sign in to Google Cloud Platform you will see a banner across the top "Free Trial Status: ...". Click the 'Activate' button to upgrade your account and enable free trial credits
-    - Sign in with university email through **TODO:Google Apps @ Illinois**. "Google Cloud Platform service has been disabled. Please contact your administrator to restore service in G Suite Admin console."
+1. Request Access up for Google Cloud Platform
+In order to run this tutorial, users will need access to a Google Cloud Platform account and should fill out the [[cloud access request form](https://docs.google.com/forms/d/1lfMSjkIuYJTiJn6ZcxsF4HzSmzWctx3nbBBLqd0efJM/edit){target='_blank'}]. Once your account has been set up, you will be able to create personal Google Cloud Projects and access Google's [AutoML Vision](https://cloud.google.com/vision/automl/docs/) interfaces for automated architecture search and training of convolutional neural network models.
 
 2. Create a Google Cloud Project
 All our data and model training will be grouped under one project, which we must first create:
@@ -165,7 +156,7 @@ Once you have completed the tutorial, there are several extensions that could be
 - Improving this model and testing its generalizability with two alternative chest X-ray datasets.
   - Stanford CheXpert Chest X-ray, [dataset](https://stanfordmlgroup.github.io/competitions/chexpert/) and [paper](https://arxiv.org/abs/1901.07031)
   - MIT MIMIC Chest X-ray, [dataset](https://physionet.org/content/mimic-cxr/2.0.0/) and [paper](https://arxiv.org/abs/1901.07042)
-- Turning your model into a deployed mobile app **TODO: (Turning on GCP servers to stand by for uploaded images for this will have daily costs)**:
+- Turning your model into a deployed mobile app **Npte: Turning on GCP servers to stand by for uploaded images for this will have daily costs**:
   - AutoML on phone app [instructions](https://cloud.google.com/vision/automl/docs/export-edge)
 - Applying AutoML Vision models to different types of images (related [paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4977982/))
   - MURA (**mu**sculoskeletal **ra**diographs) [dataset](https://stanfordmlgroup.github.io/competitions/mura/)
@@ -179,5 +170,4 @@ Once you have completed the tutorial, there are several extensions that could be
 
 ## Cleanup
 
-After the tutorial and any project extensions requiring Google Cloud are complete, users will need to delete their Google Cloud projects to halt recurring costs.
-**TODO: more detail needed about how to handle this**
+After the tutorial and any project extensions requiring Google Cloud are complete, users will need to delete their Google Cloud projects to halt recurring costs. In the Cloud Console, go to `Manage resources` page, find the project you want to delete, click `Delete`, and type the project ID to `Shut down` the project.
