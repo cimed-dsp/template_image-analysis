@@ -31,7 +31,7 @@ This tutorial will only focus on one of the datasets of the paper, the NIH Chest
 ## Step-by-Step Instructions
 
 1. Request Access up for Google Cloud Platform
-In order to run this tutorial, users will need access to a Google Cloud Platform account and should fill out the [[cloud access request form](https://docs.google.com/forms/d/1lfMSjkIuYJTiJn6ZcxsF4HzSmzWctx3nbBBLqd0efJM/edit){target='_blank'}]. Once your account has been set up, you will be able to create personal Google Cloud Projects and access Google's [AutoML Vision](https://cloud.google.com/vision/automl/docs/) interfaces for automated architecture search and training of convolutional neural network models.
+In order to run this tutorial, users will need access to a Google Cloud Platform account and should fill out the [[cloud access request form](https://forms.gle/zBQAxkX1LKoNhi7h9)]. Once your account has been set up, you will be able to create personal Google Cloud Projects and access Google's [AutoML Vision](https://cloud.google.com/vision/automl/docs/) interfaces for automated architecture search and training of convolutional neural network models.
 
 2. Create a Google Cloud Project
 All our data and model training will be grouped under one project, which we must first create:
