@@ -42,7 +42,7 @@ All our data and model training will be grouped under one project, which we must
 3. Enable Cloud Storage and AutoML API
 In order to complete this tutorial and use AutoML, we must enable some API features that are not enabled by default:
 
-    - Go to the following [link](https://console.cloud.google.com/flows/enableapi?apiid=storage-component.googleapis.com,automl.googleapis.com,storage-api.googleapis.com):
+    - Go to the following Enable APIs [link](https://console.cloud.google.com/flows/enableapi?apiid=storage-component.googleapis.com,automl.googleapis.com,storage-api.googleapis.com)
     - Select your `uiuc-cimed-[netid]` project name from drop down list
     - Click 'Continue'
     - We will not need to set up the API credentials at this point, so you do not need to follow the 'Go to credentials' button
@@ -82,12 +82,11 @@ Now we are going to copy data from the NIH Google Cloud Storage Bucket to our ow
         Operation completed over 112.1k objects/42.0 GiB.
         ```
 
-      - To check how many files you have copied at the end, try the command: `gsutil -u [project_id] ls -l gs://nih-chest-xray-bucket-[netid]/png | tail -n1` and you should see a message like: 
+      - To check how many files you have copied at the end, try the command: `gsutil -u [project_id] ls -l gs://nih-chest-xray-bucket-[netid]/png | tail -n1` and you should see a message like:
 
         ``` bash
           TOTAL: 112120 objects, 45057440698 bytes (41.96 GiB)
         ```
-
 
 7. Upload DataSet CSV
 Once we have our own copy of the images, we are ready to upload information about the image labels.
@@ -172,7 +171,7 @@ Once you have completed the tutorial, there are several extensions that could be
 - Using alternative vision machine learning software and apply to image datasets with
   - Accompanying genomic or clinical information
   - More than two dimensions ([3D scans](https://www.sciencedirect.com/science/article/pii/S0939388918301181) or videos)
-- Rather than classification, find a dataset and method for other image tasks such as image segmentation, de-noising, detection, registration, and synthesis (recent [review](https://www.sciencedirect.com/science/article/pii/S0933365719311510) with accompanying [database](http://livingreview.in.tum.de/GANs_for_Medical_Applications/) of example publications). 
+- Rather than classification, find a dataset and method for other image tasks such as image segmentation, de-noising, detection, registration, and synthesis (recent [review](https://www.sciencedirect.com/science/article/pii/S0933365719311510) with accompanying [database](http://livingreview.in.tum.de/GANs_for_Medical_Applications/) of example publications).
 
 ## Cleanup
 
