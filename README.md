@@ -90,7 +90,7 @@ Now we are going to copy data from the NIH Google Cloud Storage Bucket to our ow
 
 7. Upload DataSet CSV
 Once we have our own copy of the images, we are ready to upload information about the image labels.
-    - Download the image label CSV (already preprocessed for this project), 'nih_chest_xray_full.csv', from [here](https://drive.google.com/open?id=1ct8WvtTZWgOny-Lzw0jM6iyCrWQqyxX-)
+    - Download the image label CSV (already preprocessed for this project), 'nih_chest_xray_full.csv', from [here](https://drive.google.com/file/d/166-b-qlCMxkg-pKyIt2TUDArCyVpCBDk)
       - The original unaltered file with additional detail is available at the NIH [Box](https://nihcc.app.box.com/v/ChestXray-NIHCC) directory: 'Data_Entry_2017.csv'.
       - This preprocessed file has been reformatted using AutoML [guidelines]([https://cloud.google.com/vision/automl/docs/prepare#csv](https://cloud.google.com/vision/automl/docs/prepare#csv))
     - We must modify 'nih_chest_xray_full.csv' to match the name of your unique Google Storage bucket. If you have followed the tutorial instructions, open the 'nih_chest_xray_full.csv' file in your favorite text editor and do a text search and replace, replacing the string 'netid' with your university netid as you typed it in the Google Cloud Storage Bucket name, `nih-chest-xray-bucket-[netid]`
